@@ -55,15 +55,16 @@ def add_pet_to_customer(customer, new_pet)
   return customer[:pets] << new_pet
 end  
 
-# def customer_can_afford_pet(customer, new_pet)
-#   pet_cost = []
-#   for pet in pet_shop[:pets][:price]
-#     pet_cost << pet
+#OPTIONAL
+def customer_can_afford_pet(customer, new_pet)
+  if new_pet[:price] >= @customers[1][:cash]
+    return false
+  else 
+    return true
+  end  
+end  
 
-#   if customer #funds >= lowest value of pet in array
-#     return true
-# end
-
+  
 
 
 
