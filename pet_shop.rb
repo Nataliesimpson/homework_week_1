@@ -47,6 +47,32 @@ def add_pet_to_stock(pet_shop, new_pet)
   return pet_shop[:pets] << new_pet
 end  
 
+def customer_pet_count(customers)
+  return customers[:pets].length
+end  
+
+def add_pet_to_customer(customer, new_pet)
+  return customer[:pets] << new_pet
+end  
+
+# def customer_can_afford_pet(customer, new_pet)
+#   pet_cost = []
+#   for pet in pet_shop[:pets][:price]
+#     pet_cost << pet
+
+#   if customer #funds >= lowest value of pet in array
+#     return true
+# end
+
+
+
+
+
+
+
+
+
+
 
 
 
